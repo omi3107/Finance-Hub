@@ -1,7 +1,7 @@
 <p align="center">
-  <h1 align="center">💰 FinMirror — Your Financial Digital Twin</h1>
+  <h1 align="center">💰 Finance Hub — Your Financial Digital Twin</h1>
   <p align="center">
-    <strong>A comprehensive personal finance & tax management platform built for India</strong>
+    <strong>A comprehensive personal finance & tax management platform</strong>
   </p>
   <p align="center">
     <em>Track income & expenses · Auto-categorize transactions · Budget with 50-30-20 · Estimate taxes · Monitor credit health · Simulate your financial future</em>
@@ -446,3 +446,4 @@ ISC
 <p align="center">
   <sub>Built with ❤️ by <strong>HackVengers</strong></sub>
 </p>
+
