@@ -1,10 +1,10 @@
 <p align="center">
-  <h1 align="center">💰 Finance Hub — Your Financial Digital Twin</h1>
+  <h1 align="center">💰 Finance Hub — Multi-Agent Financial Advisory & Personal Finance Platform</h1>
   <p align="center">
-    <strong>A comprehensive personal finance & tax management platform</strong>
+    <strong>An AI-powered, multi-agent personal finance intelligence platform built for India's youth and young professionals</strong>
   </p>
   <p align="center">
-    <em>Track income & expenses · Auto-categorize transactions · Budget with 50-30-20 · Estimate taxes · Monitor credit health · Simulate your financial future</em>
+    <em>Multi-agent council · Smart budgeting · Auto-categorization · Tax estimation · Credit health · Digital Financial Twin · Investment intelligence</em>
   </p>
 </p>
 
@@ -19,80 +19,207 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
 </p>
 
+<p align="center">
+  <strong>🎯 SDG 10</strong> — Reduced Inequalities &nbsp;|&nbsp;
+  <strong>🏙️ SDG 11</strong> — Sustainable Cities and Communities
+</p>
+
 ---
 
 ## 📖 Table of Contents
 
-- [Overview](#-overview)
+- [The Problem](#-the-problem)
+- [Our Solution](#-our-solution)
 - [Key Features](#-key-features)
-- [Architecture](#-architecture)
+- [Multi-Agent Architecture](#-multi-agent-architecture)
 - [Tech Stack](#-tech-stack)
+- [Architecture](#-architecture)
 - [Project Structure](#-project-structure)
 - [Getting Started](#-getting-started)
 - [Environment Variables](#-environment-variables)
 - [API Reference](#-api-reference)
 - [AI Engine Services](#-ai-engine-services)
 - [Data Models](#-data-models)
-- [Demo Flow](#-demo-flow)
-- [Disclaimer](#-disclaimer)
+- [Multi-Persona Demo](#-multi-persona-demo)
+- [Future Enhancements](#-future-enhancements)
+- [Disclaimer](#%EF%B8%8F-disclaimer)
 - [Team](#-team)
+- [Support](#-support)
 
 ---
 
-## 🌟 Overview
+## 🔍 The Problem
 
-**FinMirror** is a full-stack personal finance intelligence platform built for the Indian context. It enables users to consolidate financial data from multiple sources (bank statements, wallets, cards), receive AI-powered insights, and simulate their financial future through a **Digital Financial Twin**.
+College students and young professionals in India face a financial literacy crisis:
 
-All financial intelligence is powered by a **deterministic, rule-based engine** — every recommendation is explainable, transparent, and free of black-box ML models. The platform is designed to be privacy-first with no external data sharing.
+- **68% of Indian youth (18–25)** have no formal financial literacy training
+- Traditional financial advisors charge **₹5,000–20,000 per session** — out of reach for most
+- Generic budgeting apps offer **one-size-fits-all** advice that ignores individual circumstances
+- Result: **zero emergency savings**, high-interest debt, missed investment opportunities, and lifestyle inflation
+
+There is no single platform that consolidates **income tracking, expense categorization, budgeting, credit monitoring, tax compliance, investment guidance, and behavioral coaching** — tailored to the Indian context.
+
+---
+
+## 💡 Our Solution
+
+**Finance Hub** is a comprehensive, AI-powered personal finance platform that acts as a **multi-agent financial advisory council**. It brings together four specialized AI agents — **Budget Agent**, **Savings Agent**, **Debt Manager**, and **Investment Scout** — to provide holistic, personalized financial guidance.
+
+Every insight is **explainable, transparent, and deterministic** — no black-box ML. Users can track finances across multiple sources (bank accounts, wallets, cards), receive actionable monthly plans, compare "Current Path vs. Optimized Path" scenarios, and simulate their financial future through a **Digital Financial Twin**.
+
+### What Makes Finance Hub Different?
+
+| Challenge | Finance Hub's Approach |
+|-----------|---------------------|
+| Expensive advisors | Free, automated multi-agent advisory council |
+| Generic advice | Persona-aware recommendations (student, salaried, freelancer) |
+| Scattered tools | Single platform for budgeting + tax + credit + investments + goals |
+| Black-box suggestions | Every recommendation includes explainable reasoning |
+| No future visibility | Digital Financial Twin with 12-month projection & scenario analysis |
+| India-specific gaps | ITR/tax regime comparison, 80C/80D optimization, CIBIL-style scoring |
 
 ---
 
 ## ✨ Key Features
 
-### 💳 Transaction Management
-- **Multi-source ingestion** — Bank CSV, Paytm wallet, card statements, and manual entry
-- **AI-powered categorization** — Automatic merchant-to-category mapping with confidence scores
+### 🤖 Multi-Agent Financial Advisory Council
+
+Four specialized AI agents collaborate to generate a **unified monthly action plan**:
+
+| Agent | Role | Output |
+|-------|------|--------|
+| **💰 Budget Agent** | Analyzes spending patterns against the 50-30-20 rule | Top 2–3 areas to reduce spending with estimated savings |
+| **🎯 Savings Agent** | Plans goal-based savings (emergency fund, travel, gadgets) | Monthly contribution plans with progress tracking |
+| **📉 Debt Manager** | Manages loan/credit card repayment strategies | Avalanche/snowball recommendations, prepayment impact analysis |
+| **📈 Investment Scout** | Evaluates readiness and recommends beginner-friendly options | PPF, index funds, SIPs recommendations based on risk tolerance |
+
+The **Council Synthesis** layer combines all agent outputs into a single, coherent monthly action plan with prioritized steps.
+
+### 🔄 Scenario Comparison
+- **"Current Path" vs "Optimized Path"** — 3-month and 12-month projections
+- Visual comparison of spending, savings growth, and debt payoff timelines
+- Quantified impact of following agent recommendations
+
+### 💳 Multi-Source Transaction Management
+- **Ingestion from multiple sources** — Bank CSV, Paytm wallet, card statements, UPI, and manual entry
+- **AI-powered auto-categorization** — Merchant-to-category mapping with confidence scores (8–10 expense categories: rent, food, transport, entertainment, etc.)
 - **Recurring transaction detection** — Identifies subscriptions and repeating expenses
 
-### 📊 Budget & Behavior Analysis
-- **50-30-20 rule enforcement** — Needs / Wants / Savings classification with violation alerts
+### 📊 Budget Intelligence (50-30-20)
+- **Needs / Wants / Savings classification** with violation alerts
 - **Spending pattern analysis** — Month-over-month trends, top categories, anomaly detection
 - **Budget health scoring** — Quantified financial discipline metric
+- **Actionable reduction targets** — Specific recommendations with estimated savings
 
 ### 🏦 Credit Health Score
-- **Simulated credit score** (300–900) — Based on payment regularity, credit utilization, and loan discipline
-- **Explainable breakdown** — Per-factor scoring with improvement suggestions
+- **Simulated credit score (300–900)** — CIBIL-style scoring based on payment regularity, credit utilization, and loan discipline
+- **Explainable per-factor breakdown** with improvement suggestions
 - **Loan management** — EMI tracking, prepayment analysis, debt-to-income monitoring
 
-### 🧾 Tax Estimation (India-Specific)
+### 🧾 Tax Estimation & ITR Assistance (India-Specific)
 - **Old vs. New regime comparison** — FY 2024–25 tax slabs
 - **Deduction optimization** — Section 80C, 80D, 80CCD(1B), HRA, and more
 - **Tax-saving suggestions** — Actionable recommendations with quantified savings
+- **ITR preparation support** — Deadline reminders and compliance checks
 
-### 🎯 Goal-Based Savings
-- **Financial goal creation** — Emergency fund, car, vacation, education
+### 🎯 Goal-Based Savings Planning
+- **Financial goal creation** — Emergency fund, car, vacation, education, gadgets
 - **Progress tracking** — Visual progress bars with projected completion dates
 - **Monthly contribution planning** — Required savings rate calculations
 
-### 🤖 Digital Financial Twin
-- **Future simulation** — 12-month financial projections based on current behavior
-- **Scenario analysis** — Baseline, increased savings, job loss, EMI prepayment
+### 🧬 Digital Financial Twin
+- **12-month financial projections** based on current behavior
+- **Scenario simulation** — Baseline, increased savings, job loss, EMI prepayment
 - **Net worth forecasting** — Tracks savings growth, debt reduction, and goal feasibility
+- **"What-if" analysis** — Impact of any financial decision before committing
 
 ### 🛡️ Emergency Shield
 - **Emergency fund adequacy check** — 3-month expense coverage analysis
 - **Financial safety scoring** — Holistic risk assessment
+- Acts as a guard rail before the Investment Scout recommends any investments
 
 ### 📈 Investment Intelligence
-- **Investment readiness gate** — Evaluates if user is financially ready to invest
-- **Risk profile classification** — Stability-Focused / Growth-Ready / Growth-Optimized
-- **Agent explanation layer** — Natural language explanations for all recommendations
-- **Live stock market data** — Real-time market information integration
+- **Investment readiness gate** — Evaluates if user is financially prepared to invest
+- **Risk profile classification** — Stability-Focused / Growth-Ready / Growth-Optimized (based on income stability, spending volatility, savings rate, and investment consistency)
+- **Agent explanation layer** — Natural language explanations (with optional Gemini LLM enhancement) for all recommendations
+- **Live stock market data** — Real-time market information
 
-### 🔔 Smart Alerts
+### 🔔 Smart Alerts & Reminders
 - **Overspending warnings** — Triggered when budget buckets are exceeded
 - **Tax deadline reminders** — ITR filing, advance tax dates
 - **Goal progress alerts** — On-track / at-risk notifications
+- **Monthly action plan delivery** — Council synthesized recommendations
+
+### 📊 Visual Analytics Dashboard
+- Expense breakdown (pie charts)
+- Monthly spending trends (line charts)
+- Savings growth visualization
+- Debt payoff timeline
+- Goal progress gauges
+
+---
+
+## 🧠 Multi-Agent Architecture
+
+```
+                    ┌─────────────────────────────────┐
+                    │       User Financial Data        │
+                    │  (Income, Expenses, Loans, Goals) │
+                    └────────────────┬────────────────┘
+                                     │
+                    ┌────────────────▼────────────────┐
+                    │        Financial Ledger          │
+                    │   (Aggregated Snapshot of All     │
+                    │    Assets, Debts, Transactions)   │
+                    └────────────────┬────────────────┘
+                                     │
+              ┌──────────────────────┼──────────────────────┐
+              │                      │                      │
+   ┌──────────▼──────────┐ ┌────────▼────────┐ ┌──────────▼──────────┐
+   │   💰 Budget Agent    │ │ 🎯 Savings Agent│ │  📉 Debt Manager    │
+   │                      │ │                 │ │                      │
+   │ • 50-30-20 analysis  │ │ • Goal planning │ │ • Repayment strategy│
+   │ • Top areas to cut   │ │ • Monthly SIPs  │ │ • Avalanche/Snowball│
+   │ • Spending anomalies │ │ • Projections   │ │ • Prepayment impact │
+   └──────────┬───────────┘ └────────┬────────┘ └──────────┬──────────┘
+              │                      │                      │
+              │         ┌────────────▼────────────┐         │
+              │         │  🛡️ Emergency Shield     │         │
+              │         │  (Readiness Gate)        │         │
+              │         │                          │         │
+              │         │  • Emergency fund check  │         │
+              │         │  • Debt-to-income ratio  │         │
+              │         │  • Budget adherence      │         │
+              │         └────────────┬─────────────┘         │
+              │                      │                       │
+              │              ┌───────▼───────┐               │
+              │              │ 📈 Investment  │               │
+              │              │    Scout       │               │
+              │              │               │               │
+              │              │ • Risk profile │               │
+              │              │ • PPF/SIP/MF   │               │
+              │              │ • Stocks data  │               │
+              │              └───────┬───────┘               │
+              │                      │                       │
+   ┌──────────▼──────────────────────▼───────────────────────▼──────────┐
+   │                    🏛️ Council Synthesis                             │
+   │                                                                    │
+   │  • Combines all agent outputs into unified monthly action plan     │
+   │  • Prioritizes recommendations by impact                          │
+   │  • Generates "Current Path vs Optimized Path" comparison          │
+   │  • Natural language explanations (template + optional LLM)        │
+   └────────────────────────────────────────────────────────────────────┘
+```
+
+### Agent Design Principles
+
+| Principle | Implementation |
+|-----------|---------------|
+| **Modular** | Each agent is independently deployable and testable |
+| **Deterministic** | Rule-based logic — outcomes are reproducible and explainable |
+| **Stateless** | Agents receive full context per request, never access DB directly |
+| **Extensible** | New agents can be added without modifying existing ones |
+| **Fast** | Persona-based recommendations generated in < 10 seconds |
 
 ---
 
@@ -102,31 +229,31 @@ All financial intelligence is powered by a **deterministic, rule-based engine** 
 ┌──────────────────────────────────────────────────────┐
 │              Frontend (Next.js 16 + React 19)        │
 │         Tailwind CSS · shadcn/ui · Recharts          │
+│                                                      │
+│  Dashboard · Action Plan · Visual Analytics          │
 └─────────────────────┬────────────────────────────────┘
                       │ REST API (JSON)
                       ▼
 ┌──────────────────────────────────────────────────────┐
 │         Backend API (Node.js + Express 5 + TS)       │
 │        JWT Auth · Mongoose ODM · MongoDB             │
+│                                                      │
+│  User Mgmt · Ledger · Orchestration · Persistence    │
 └─────────────────────┬────────────────────────────────┘
                       │ Internal HTTP/JSON
                       ▼
 ┌──────────────────────────────────────────────────────┐
 │           AI Engine (Python + FastAPI)                │
-│     Rules Engine · Digital Twin · Tax Logic           │
-│         Stateless · Deterministic · Explainable      │
+│                                                      │
+│  ┌─────────┐ ┌──────────┐ ┌────────┐ ┌───────────┐  │
+│  │ Budget   │ │ Savings  │ │ Debt   │ │ Investment│  │
+│  │ Agent    │ │ Agent    │ │ Manager│ │ Scout     │  │
+│  └─────────┘ └──────────┘ └────────┘ └───────────┘  │
+│                                                      │
+│  Rules Engine · Digital Twin · Tax Logic · Council   │
+│      Stateless · Deterministic · Explainable         │
 └──────────────────────────────────────────────────────┘
 ```
-
-### Design Principles
-
-| Principle | Implementation |
-|-----------|---------------|
-| **Stateless AI** | AI Engine receives full context per request, never accesses DB directly |
-| **Explainable** | Every recommendation includes reasoning — no black-box predictions |
-| **Privacy-first** | No external API data sharing, all processing is local |
-| **Microservice** | AI Engine is independently deployable and testable |
-| **Rule-based** | Deterministic financial logic — outcomes are reproducible |
 
 ---
 
@@ -161,6 +288,7 @@ All financial intelligence is powered by a **deterministic, rule-based engine** 
 | **FastAPI** | High-performance async API framework |
 | **Pydantic** | Data validation and serialization |
 | **pdfplumber** | Bank statement PDF parsing |
+| **Google Gemini API** | Optional LLM-enhanced explanations |
 | **pytest** | Testing framework |
 | **uvicorn** | ASGI server |
 
@@ -174,10 +302,12 @@ HackVengers/
 │   ├── app/                     # App Router pages
 │   │   ├── auth/                # Login & Sign-up pages
 │   │   └── dashboard/           # Protected dashboard pages
+│   │       ├── action-plan/     # 🏛️ Council Synthesis view
 │   │       ├── accounts/        # Payment accounts management
 │   │       ├── budget/          # Budget overview & 50-30-20
 │   │       ├── categories/      # Transaction categories
 │   │       ├── emergency-fund/  # Emergency fund tracking
+│   │       ├── explore/         # Financial product discovery
 │   │       ├── goals/           # Financial goals
 │   │       ├── investments/     # Investment portfolio
 │   │       ├── loans/           # Loan & EMI management
@@ -201,17 +331,28 @@ HackVengers/
 │       ├── models/              # 11 Mongoose schemas
 │       ├── routes/              # 21 API route modules
 │       ├── services/            # 20 business logic services
-│       ├── middleware/           # Auth, error handling
+│       ├── middleware/          # Auth, error handling
 │       ├── integrations/        # AI Engine HTTP client
 │       ├── utils/               # Helpers & utilities
 │       └── types/               # TypeScript type definitions
 │
-├── ai-engine/                   # Python FastAPI Microservice
+├── ai-engine/                   # Python FastAPI — Multi-Agent AI
 │   ├── main.py                  # Application entry point
 │   ├── requirements.txt         # Python dependencies
 │   ├── app/
 │   │   ├── routers/             # 12 API endpoint routers
-│   │   ├── services/            # 12 business logic services
+│   │   ├── services/            # Agent services
+│   │   │   ├── budget_agent_service.py
+│   │   │   ├── goal_service.py           # Savings Agent
+│   │   │   ├── credit_service.py         # Debt Manager
+│   │   │   ├── investment_readiness_service.py  # Investment Scout
+│   │   │   ├── agent_explanation_service.py     # Council Synthesis
+│   │   │   ├── digital_twin_service.py
+│   │   │   ├── tax_service.py
+│   │   │   ├── behavior_service.py
+│   │   │   ├── categorization_service.py
+│   │   │   ├── alert_service.py
+│   │   │   └── statement_parser_service.py
 │   │   ├── rules/               # Deterministic rule definitions
 │   │   ├── models/              # Pydantic schemas
 │   │   ├── core/                # Config, logging, constants
@@ -276,7 +417,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-The AI engine server will start on **http://localhost:8000** (with interactive docs at `/docs`)
+The AI engine will start on **http://localhost:8000** (interactive docs at `/docs` in debug mode)
 
 ### 4. Frontend Setup
 
@@ -312,7 +453,7 @@ npm run seed:demo
 | `JWT_EXPIRES_IN` | Token expiration duration | `7d` |
 | `AI_ENGINE_URL` | URL of the Python AI Engine | `http://localhost:5000` |
 
-> **Note:** Copy `backend/.env.example` to `backend/.env` and fill in your values. Never commit `.env` to version control.
+> Copy `backend/.env.example` to `backend/.env` and fill in your values. Never commit `.env` to version control.
 
 ---
 
@@ -337,11 +478,11 @@ npm run seed:demo
 | `GET/POST` | `/recurrings` | Recurring transaction tracking |
 | `GET/POST` | `/investments` | Investment portfolio management |
 | `GET/POST` | `/loans` | Loan & EMI management |
-| `GET` | `/ledger` | Aggregated financial ledger |
+| `GET` | `/ledger` | Aggregated financial ledger (all assets) |
 | `POST` | `/investment-agent` | Investment readiness assessment |
 | `GET` | `/risk-profile` | Risk profile classification |
 | `GET` | `/investment-recommendations` | Personalized investment suggestions |
-| `GET` | `/agent` | Agent explanation layer |
+| `GET` | `/agent` | Agent explanation layer (Council output) |
 | `GET` | `/stocks` | Live stock market data |
 | `GET/POST` | `/emergency-shield` | Emergency fund assessment |
 | `GET` | `/balance` | Ledger-correct balance accounting |
@@ -351,38 +492,38 @@ npm run seed:demo
 | Method | Route | Description |
 |--------|-------|-------------|
 | `GET` | `/health` | Health check |
-| `POST` | `/categorize` | Transaction categorization |
+| `POST` | `/categorize` | Transaction categorization (8–10 categories) |
 | `POST` | `/behavior/analyze` | Spending behavior analysis (50-30-20) |
 | `POST` | `/credit/analyze` | Credit health scoring |
 | `POST` | `/tax/estimate` | Tax estimation (Old vs. New regime) |
 | `POST` | `/tax/suggestions` | Tax-saving suggestions |
-| `POST` | `/goals/plan` | Goal feasibility & planning |
+| `POST` | `/goals/plan` | Goal feasibility & savings planning |
 | `POST` | `/twin/simulate` | Digital Financial Twin simulation |
 | `POST` | `/alerts/check` | Alert generation |
 | `POST` | `/parse` | Bank statement parsing (CSV/PDF) |
-| `POST` | `/budget` | Budget agent analysis |
+| `POST` | `/budget` | Budget Agent analysis |
 | `POST` | `/investment/readiness` | Investment readiness gate |
-| `POST` | `/agent/explanation` | Natural language explanations |
+| `POST` | `/agent/explanation` | Council explanation layer |
 
 ---
 
 ## 🧠 AI Engine Services
 
-The AI Engine is a **stateless microservice** that performs all financial intelligence computations. It never accesses the database directly — all context is provided in the request payload.
+The AI Engine is a **stateless microservice** housing all specialized agents. It never accesses the database directly — all context is provided in the request payload.
 
-| Service | Responsibility |
-|---------|---------------|
-| **Categorization Service** | Maps merchant names to spending categories with confidence scores |
-| **Behavior Service** | Analyzes spending patterns, detects 50-30-20 violations, generates suggestions |
-| **Credit Service** | Computes simulated credit health score (300–900) with explainable factors |
-| **Tax Service** | India-specific tax estimation — FY 2024-25 slabs, 80C/80D deductions, regime comparison |
-| **Goal Service** | Savings goal planning — required monthly contributions, projected completion |
-| **Digital Twin Service** | 12-month financial projection engine with scenario simulation |
-| **Alert Service** | Deadline reminders, overspending alerts, compliance checks |
-| **Statement Parser Service** | Parses bank/wallet CSV and PDF statements into structured transactions |
-| **Budget Agent Service** | Intelligent budget allocation and rebalancing recommendations |
-| **Investment Readiness Service** | Gate that evaluates if user is financially ready to invest |
-| **Agent Explanation Service** | Generates natural language explanations for all AI decisions |
+| Service | Agent Role | Responsibility |
+|---------|-----------|---------------|
+| **Budget Agent Service** | 💰 Budget Agent | Identifies top discretionary spending categories, suggests 15% cuts with estimated savings |
+| **Goal Service** | 🎯 Savings Agent | Goal-based savings planning (emergency fund, travel, gadgets), monthly contribution rates |
+| **Credit Service** | 📉 Debt Manager | Simulated credit score (300–900), repayment strategy, avalanche/snowball recommendations |
+| **Investment Readiness Service** | 📈 Investment Scout | Readiness gate (emergency fund, DTI, budget adherence), investment recommendations |
+| **Agent Explanation Service** | 🏛️ Council | Synthesizes all agent outputs into natural language explanations (template + optional Gemini LLM) |
+| **Behavior Service** | — | Spending pattern analysis, 50-30-20 violations, month-over-month trends |
+| **Tax Service** | — | India-specific FY 2024–25 tax estimation, 80C/80D deductions, regime comparison |
+| **Digital Twin Service** | — | 12-month financial projection, scenario simulation (baseline, savings boost, job loss) |
+| **Categorization Service** | — | Merchant → category mapping with confidence scores across 8–10 expense categories |
+| **Statement Parser Service** | — | Parses bank/wallet CSV and PDF statements into structured transactions |
+| **Alert Service** | — | Deadline reminders, overspending alerts, compliance checks |
 
 ---
 
@@ -392,32 +533,111 @@ The backend uses **MongoDB** with **Mongoose** ODM. Key data models:
 
 | Model | Description |
 |-------|-------------|
-| `User` | Authentication, profile, and financial summary |
-| `Transaction` | Individual financial transactions (multi-source) |
-| `Budget` | Monthly budget allocations and limits |
-| `Goal` | Savings goals with targets and deadlines |
-| `Loan` | Active loans with EMI schedules |
-| `Investment` | Investment holdings (MF, FD, stocks) |
-| `CreditSnapshot` | Point-in-time credit health assessments |
-| `TaxProfile` | Income sources, deductions, and tax computations |
-| `Alert` | System-generated user notifications |
+| `User` | Authentication, profile, income sources, and financial summary |
+| `Transaction` | Individual financial transactions (multi-source: bank, wallet, card, manual) |
+| `Budget` | Monthly budget allocations and spending limits |
+| `Goal` | Savings goals with targets, deadlines, and monthly contributions |
+| `Loan` | Active loans with EMI schedules and outstanding balances |
+| `Investment` | Investment holdings (mutual funds, FDs, stocks, PPF, SIPs) |
+| `CreditSnapshot` | Point-in-time credit health assessments with per-factor scores |
+| `TaxProfile` | Income sources, claimed deductions, and computed tax liability |
+| `Alert` | System-generated user notifications and reminders |
 | `PaymentMethod` | Linked bank accounts, wallets, and cards |
 | `Recurring` | Detected recurring transactions and subscriptions |
 
 ---
 
-## 🎬 Demo Flow
+## 🎭 Multi-Persona Demo
 
-1. **Register & Login** — Create account → JWT authentication
-2. **Add Income** — Set monthly salary and other income sources
-3. **Import Transactions** — Upload Paytm/bank CSV or add manually
-4. **Auto-Categorization** — Transactions auto-classified into Needs/Wants/Savings
-5. **Budget Insights** — View 50-30-20 analysis with violation alerts
-6. **Financial Mirror** — See behavioral spending insights and trends
-7. **Credit Health** — View simulated credit score with improvement tips
-8. **Tax Estimation** — Compare Old vs. New regime, get deduction suggestions
-9. **Digital Twin** — Simulate 12-month financial future
-10. **Goal Planning** — Create savings goals, track progress
+Finance Hub is tested with multiple user personas to validate adaptability:
+
+| Persona | Monthly Income | Profile |
+|---------|---------------|---------|
+| 🎓 **College Student** | ₹20,000 | Part-time income, minimal expenses, no investments, building emergency fund |
+| 💼 **Salaried Professional** | ₹50,000 | Stable income, EMIs, tax planning needs, starting SIPs |
+| 🧑‍💻 **Freelancer** | ₹35,000 | Irregular income, no employer benefits, tax compliance challenges |
+
+### Demo Flow
+
+1. **Register & Login** → JWT authentication
+2. **Set Income Profile** → Monthly salary, freelance earnings, or part-time income
+3. **Import Transactions** → Upload Paytm/bank CSV or add manually across 8–10 categories
+4. **Auto-Categorization** → Transactions classified into Needs / Wants / Savings
+5. **Budget Agent Analysis** → Top 2–3 areas to cut spending with estimated savings
+6. **Financial Mirror** → Behavioral insights, spending anomalies, and trends
+7. **Credit Health** → Simulated CIBIL-style score with improvement roadmap
+8. **Tax Estimation** → Old vs. New regime comparison, deduction suggestions
+9. **Digital Twin** → "Current Path" vs "Optimized Path" 3-month projection
+10. **Council Action Plan** → Unified monthly action plan from all four agents
+
+---
+
+## 📊 Expected Impact
+
+| Metric | Target |
+|--------|--------|
+| **Monthly savings awareness** | 20–30% improvement (simulated) |
+| **Debt repayment efficiency** | Highlighted optimal strategies (avalanche/snowball) |
+| **Financial confidence** | Boosted through actionable, explainable recommendations |
+| **Recommendation speed** | Persona-based output generated in < 10 seconds |
+| **Architecture extensibility** | New agents can be added without modifying existing ones |
+
+---
+
+## 🔮 Future Enhancements
+
+| Enhancement | Description |
+|-------------|-------------|
+| **RBI Account Aggregator Integration** | Use RBI-licensed account aggregators (e.g., Setu, Finvu) for real-time, consent-based access to users' bank transactions, eliminating manual CSV uploads |
+| **UPI Autopay for SIPs** | Enable automated monthly investments via UPI mandate for goal-based savings and SIP contributions |
+| **Real CIBIL Score Fetch** | Integrate with credit bureaus (TransUnion CIBIL, Experian) to fetch actual credit scores with user consent |
+| **Multi-Language Support** | Add Hindi, Tamil, Telugu, and other regional language support to reach tier-2 and tier-3 city users |
+| **WhatsApp / SMS Notifications** | Push monthly action plans, overspending alerts, and tax deadline reminders via WhatsApp Business API or SMS gateways |
+| **Progressive Web App (PWA)** | Make Finance Hub installable on mobile devices with offline support and push notifications |
+| **Gamification & Streaks** | Introduce savings streaks, budget adherence badges, and financial health leaderboards to boost engagement |
+| **Peer Comparison (Anonymized)** | Allow users to compare their financial health metrics against anonymized peers in similar income brackets |
+| **Advanced ML Models** | Upgrade from rule-based to hybrid ML models for smarter spending anomaly detection and personalized forecasting |
+| **Family Finance Mode** | Extend platform to support household-level budgeting with shared goals and joint expense tracking |
+
+---
+
+## 👥 Our Team 
+
+Have questions, suggestions, or want to contribute? Feel free to reach out 📬:
+
+### 👤 Omkar Desai
+
+| Platform | Link |
+|----------|------|
+| **GitHub** | [omi3107](https://github.com/omi3107) |
+| **Email** | [omkardesai3107@gmail.com](mailto:omkardesai3107@gmail.com) |
+| **LinkedIn** | [Omkar Desai](https://linkedin.com/in/omkar-desai-726037333/) |
+
+### 👤 Kalpesh Eragi
+
+| Platform | Link |
+|----------|------|
+| **GitHub** | [KalpeshEragi](https://github.com/KalpeshEragi) |
+| **Email** | [kaplesheragi@gmail.com](mailto:kalpesheragi@gmail.com) |
+| **LinkedIn** | [Kalpesh Eragi](https://linkedin.com/in/kalpesh-eragi-72562031a/) |
+
+### 👤 Andrew Fernandes
+
+| Platform | Link |
+|----------|------|
+| **GitHub** | [AndyFerns](https://github.com/AndyFerns) |
+| **Email** | [write2andrew.fernandes@gmail.com](mailto:write2andrew.fernandes@gmail.com) |
+| **LinkedIn** | [Andrew Fernandes](https://linkedin.com/in/andrew-fernandes-2004o/) |
+
+### 👤 Chris Anil
+
+| Platform | Link |
+|----------|------|
+| **GitHub** | [chrisxanil](https://github.com/chrisxanil) |
+| **Email** | [chummachris@gmail.com](mailto:chummachris@gmail.com) |
+| **LinkedIn** | [Chris Anil](https://linkedin.com/in/chrisxanil2004/) |
+
+> 💡 Found a bug? Open an [issue](https://github.com/omi3107/Finance-Hub/issues) on the repository.
 
 ---
 
@@ -427,13 +647,8 @@ The backend uses **MongoDB** with **Mongoose** ODM. Key data models:
 - Credit scores are **simulated** (not actual CIBIL scores)
 - Tax calculations are **estimates** for FY 2024–25 salary income only
 - No real bank APIs or live payment integrations are used
-- This is a **hackathon MVP** — not production-ready financial software
-
----
-
-## 👥 Team
-
-**HackVengers** — Built during a fintech hackathon (PS-12: Comprehensive Personal Finance & Tax Management Platform)
+- Investment recommendations are **educational** — always consult a certified financial advisor
+- Security, privacy, and data integrity are core priorities — all processing is local
 
 ---
 
@@ -446,4 +661,3 @@ ISC
 <p align="center">
   <sub>Built with ❤️ by <strong>HackVengers</strong></sub>
 </p>
-
